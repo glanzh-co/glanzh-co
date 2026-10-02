@@ -1,0 +1,415 @@
+/* ==========================================================================
+   Main Stylesheet - Separated from index.html
+   ========================================================================== */
+
+/* Image Auto Sizes & Intrinsic Dimensions */
+img:is([sizes=auto i], [sizes^="auto," i]) {
+    contain-intrinsic-size: 3000px 1500px;
+}
+
+/* Classic WordPress Theme Button & Block Styles */
+.wp-block-button__link {
+    color: #fff;
+    background-color: #32373c;
+    border-radius: 9999px;
+    box-shadow: none;
+    text-decoration: none;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    font-size: 1.125em;
+}
+
+.wp-block-file__button {
+    background: #32373c;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Visual Composer Custom Backgrounds & Section Styling */
+.vc_custom_1784486465260 {
+    background-image: url(assets/images/brandstudio.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+/* Preloader State */
+.preloader {
+    display: none !important;
+}
+
+/* ==========================================================================
+   Section Visibility & Animation Fail-Safe Guarantees
+   ========================================================================== */
+.wpb_animate_when_almost_visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    animation-duration: 0.8s !important;
+    animation-fill-mode: both !important;
+}
+
+.heading-wrapper,
+.heading-wrapper .title,
+.heading-wrapper h2,
+.heading-wrapper h3,
+.heading-wrapper p {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Swiper Sliders Layout & Responsive Stability */
+.projekte-slider,
+.testimonials-slider,
+.post-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.projekte-slider .swiper-wrapper,
+.testimonials-slider .swiper-wrapper,
+.post-slider .swiper-wrapper {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+.projekte-slider .swiper-slide,
+.testimonials-slider .swiper-slide,
+.post-slider .swiper-slide {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Referenzen (Brands) Grid Guarantee */
+.referenzen-grid {
+    display: grid !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.referenz-item {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.referenz-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* About Box Layout */
+.about-box {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.about-box .wpb_single_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* CTA Box & Arrow Icon Styling */
+.cta-box {
+    position: relative;
+    overflow: hidden;
+    padding: 3.5vw 4vw !important;
+    background-color: var(--primary-color, #ff0036) !important;
+    border-radius: 0;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.cta-box:after {
+    display: none !important;
+}
+
+.cta-box .cta-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 220px;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-box .cta-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.cta-box .cta-top-row .eyebrow {
+    margin: 0;
+    color: #ffffff;
+    font-family: "PPMori", sans-serif;
+    font-size: 1.8vw;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.cta-box .cta-arrow-icon {
+    width: 4.5vw;
+    height: 4.5vw;
+    min-width: 36px;
+    min-height: 36px;
+    max-width: 70px;
+    max-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cta-box .cta-arrow-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.cta-box .cta-arrow-icon svg * {
+    stroke: #ffffff !important;
+}
+
+.cta-box h2 {
+    color: #ffffff !important;
+    font-family: "PPMori", sans-serif;
+    font-size: 7vw;
+    line-height: 1.05;
+    font-weight: 600;
+    margin: 4vw 0 0 0 !important;
+    letter-spacing: -0.02em;
+}
+
+.cta-box:hover,
+.cta-box.fullbox-link:hover,
+.cta-box.primary:hover,
+.cta-box.primary.fullbox-link:hover {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.cta-box.fullbox-link:hover .cta-arrow-icon {
+    transform: translate(6px, -6px);
+}
+
+@media (max-width: 991px) {
+    .cta-box {
+        padding: 5vw !important;
+    }
+    .cta-box .cta-top-row .eyebrow {
+        font-size: 3.2vw;
+    }
+    .cta-box .cta-arrow-icon {
+        width: 6vw;
+        height: 6vw;
+    }
+    .cta-box h2 {
+        font-size: 10vw;
+        margin-top: 6vw !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .cta-box {
+        padding: 6vw 5vw !important;
+    }
+    .cta-box .cta-top-row .eyebrow {
+        font-size: 18px;
+    }
+    .cta-box .cta-arrow-icon {
+        width: 32px;
+        height: 32px;
+    }
+    .cta-box h2 {
+        font-size: 42px;
+        margin-top: 24px !important;
+    }
+}
+
+/* ==========================================================================
+   GLANZH Logo Styles
+   ========================================================================== */
+
+/* Header logo images - Locked fixed size from page load throughout with no resize on scroll */
+#branding .logo {
+    display: flex;
+    align-items: center;
+    transform: none !important;
+    transition: none !important;
+    height: 28px !important;
+    max-height: 28px !important;
+}
+
+#branding .logo-img {
+    height: 28px !important;
+    max-height: 28px !important;
+    min-height: 28px !important;
+    width: auto !important;
+    transform: none !important;
+    animation: none !important;
+    transition: opacity 0.3s ease !important;
+}
+
+/* Ensure no state (sticky, animate, reverse, scroll) alters the logo size */
+header #branding .logo,
+header.sticky #branding .logo,
+header #branding .logo-img,
+header.sticky #branding .logo-img,
+.animate #branding .logo-img {
+    height: 28px !important;
+    max-height: 28px !important;
+    min-height: 28px !important;
+    width: auto !important;
+    transform: none !important;
+    animation: none !important;
+}
+
+/* Default state: show dark logo (white SVG inverted to black), hide light */
+#branding .logo-dark {
+    display: block;
+    filter: invert(1);
+}
+#branding .logo-light {
+    display: none;
+}
+
+/* Sticky header: show white logo, hide dark */
+header.sticky #branding .logo-dark {
+    display: none;
+}
+header.sticky #branding .logo-light {
+    display: block !important;
+    filter: none;
+}
+
+/* Canvas menu open state: show white logo */
+.canvas-menu-open #branding .logo-dark {
+    display: none;
+}
+.canvas-menu-open #branding .logo-light {
+    display: block !important;
+    filter: none;
+}
+
+/* Footer logo sizing & layout - Full width vector logo matching original designer part layout */
+.footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer .footer-logo {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 7vw;
+}
+
+.footer .footer-logo img,
+.footer .footer-logo svg,
+.footer-logo img,
+.footer-logo svg {
+    width: 96%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-left: 20px;
+}
+
+.footer .p-small {
+    padding-left: 5.5vw;
+    position: absolute;
+    left: 0;
+    bottom:-1vw;
+    width: 45%;
+    max-width: 600px;
+    z-index: 2;
+    text-align: left;
+}
+
+.footer .p-small p {
+    font-size: 0.75vw;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.footer .copyright {
+    padding-right: 5.5vw;
+    padding-left: 0;
+    position: absolute;
+    right: 0;
+    left: auto;
+    bottom: 1.2vw;
+    width: auto;
+    max-width: 50%;
+    z-index: 2;
+    text-align: right;
+}
+
+.footer .copyright p {
+    font-size: 0.7vw;
+    line-height: 1.4;
+    color: #777;
+    margin: 0;
+}
+
+.footer .copyright a {
+    color: #777;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer .copyright a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .footer .footer-logo {
+        margin-bottom: 4vw;
+    }
+    .footer .copyright,
+    .footer .p-small {
+        position: relative;
+        left: unset;
+        right: unset;
+        bottom: unset;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 3vw;
+        text-align: left;
+    }
+    .footer .p-small p {
+        font-size: 1.4vw;
+    }
+    .footer .copyright p {
+        font-size: 1.4vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer .p-small p {
+        font-size: 13px;
+    }
+    .footer .copyright p {
+        font-size: 12px;
+    }
+}
+
